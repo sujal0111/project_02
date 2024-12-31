@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Mart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="logo">
+                <img src="images/logo.png" alt="Electronics Mart">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-actions">
+                <button id="toggleTheme"><i class="fas fa-adjust"></i></button>
+                <button id="cartButton"><i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span></button>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Appliances</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Experience Innovation Everywhere!</h2>
+            <p>Sale and Deals</p>
+            <button>Shop Now</button>
+            <!-- <img src="air-purifiers.jpg" alt="Air Purifiers"> -->
+        </section>
+
+        <section class="new-products">
+            <h2>Our New Products</h2>
+            <div class="product-grid" id="products"></div>
+        </section>
+
+        <section class="exciting-deals">
+            <h2>Exciting Deals</h2>
+            <p>Up to 40% Off</p>
+            <img src="images/exciting-deals.jpg" alt="Exciting Deals on Electronics">
+        </section>
+
+        <section class="featured-categories">
+            <div class="category">
+                <img src="images/smart-watches.png" alt="Smart Watches">
+                <h3>Smart Watches</h3>
+                <p>Starting at $29</p>
+            </div>
+            <div class="category">
+                <img src="images/smart-phones.png" alt="Smart Phones">
+                <h3>Smart Phones</h3>
+                <p>Latest Models Available</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-sections">
+            <div class="footer-category">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Mobile & Tablets</a></li>
+                    <li><a href="#">Computers</a></li>
+                    <li><a href="#">TV, Audio & Large Appliances</a></li>
+                    <li><a href="#">Mobile & Laptop Accessories</a></li>
+                    <li><a href="#">Appliances</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Get in Touch</h3>
+                <p>123 Electronics Street, Tech City, 12345</p>
+                <p>Phone: +1 234 567 8900</p>
+                <p>Email: info@electronicsmart.com</p>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <script>document.write(new Date().getFullYear());</script> Electronics Mart. All rights reserved.</p>
+            <!-- <div class="payment-methods">
+                <img src="payment-methods.png" alt="Accepted Payment Methods">
+            </div> -->
+        </div>
+    </footer>
+
+    <div id="cart" class="hidden">
+        <h2>Shopping Cart <button id="closeCart" class="close-btn">X</button></h2>
+        <ul id="cartItems"></ul>
+        <p>Total: $<span id="cartTotal">0</span></p>
+        <button id="checkoutButton">Checkout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
